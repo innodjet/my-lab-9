@@ -1,0 +1,27 @@
+.people-list-card {
+  .border-bottom {
+    border-bottom: 1px solid #dee2e6;
+  }
+  .fa-pen,
+  .fa-trash,
+  th span {
+    cursor: pointer;
+  }
+  .fa-pen {
+    color: #007bff;
+  }
+  .fa-trash {
+    color: #dc3545;
+  }
+  .search-input input {
+    width: 35%;
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .pagination {
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

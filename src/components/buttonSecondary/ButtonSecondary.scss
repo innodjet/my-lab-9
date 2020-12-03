@@ -1,0 +1,21 @@
+.container-btn-secondary-list {
+  .btn-secondary-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .btn-secondary-list li {
+    display: inline;
+    margin: 10px;
+  }
+
+  .btn-secondary-list i {
+    border: 1px solid #aeaeae;
+    background: #605f614f;
+    border-radius: 50%;
+    font-size: 45px;
+    width: 45px;
+    color: #dee2e6;
+  }
+}

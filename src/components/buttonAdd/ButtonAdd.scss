@@ -1,0 +1,14 @@
+.container-btn-add {
+  .button-add {
+    border: 1px solid #aeaeae;
+    border-radius: 50%;
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    color: #dee2e6;
+  }
+  .button-add:focus {
+    border: none;
+    outline: none;
+  }
+}
