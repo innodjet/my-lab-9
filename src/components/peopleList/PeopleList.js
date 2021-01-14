@@ -93,21 +93,17 @@ const PeopleList = ({
               {minPage}-{maxPage} of {totalData.length}
             </span>
           </li>
-          <li className="page-item">
-            <span
-              className={`page-link ${minPage === 1 ? "disabled" : ""}`}
-              onClick={previous}
-            >
+          <li className={`page-item ${minPage === 1 ? "disabled" : ""}`}>
+            <span className="page-link" onClick={previous}>
               {"<"}
             </span>
           </li>
-          <li className="page-item">
-            <span
-              className={`page-link ${
-                maxPage === totalData.length ? "disabled" : ""
-              }`}
-              onClick={next}
-            >
+          <li
+            className={`page-item ${
+              maxPage === totalData.length ? "disabled" : ""
+            }`}
+          >
+            <span className="page-link" onClick={next}>
               {">"}
             </span>
           </li>

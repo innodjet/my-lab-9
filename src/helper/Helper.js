@@ -38,11 +38,19 @@ export const SORT_DATA = (target, orderBy, data) => {
     let targetA =
       target === "username"
         ? `${a["first_name"].toLowerCase()} ${a["last_name"].toLowerCase()}`
+            .split(" ")
+            .join("")
         : a[target].toLowerCase();
     let targetB =
       target === "username"
         ? `${b["first_name"].toLowerCase()} ${b["last_name"].toLowerCase()}`
+            .split(" ")
+            .join("")
         : b[target].toLowerCase();
+    if (target === "date_of_birth") {
+      targetA = new Date(targetA);
+      targetB = new Date(targetB);
+    }
     if (orderBy === "DESC") {
       if (targetA > targetB) {
         return -1;

@@ -3,17 +3,21 @@ import "./Spinner.scss";
 import PropTypes from "prop-types";
 
 const Spinner = ({ color, status }) => {
-  const displaySpinner = () => {
-    return ["primary", "danger", "dark", "warning"].map((el) => {
-      return (
-        <div className={`spinner-grow text-${el}`} role="status" key={el}>
-          <span className="sr-only">Loading...</span>
-        </div>
-      );
-    });
-  };
   return status === "Please wait..." ? (
-    <div className="spinner spinner-container">{displaySpinner()}</div>
+    <div className="spinner spinner-container">
+      <div className="spinner-grow text-primary" role="status">
+        <span className="sr-only">Loading...</span>
+      </div>
+      <div className="spinner-grow text-danger" role="status">
+        <span className="sr-only">Loading...</span>
+      </div>
+      <div className="spinner-grow text-dark" role="status">
+        <span className="sr-only">Loading...</span>
+      </div>
+      <div className="spinner-grow text-warning" role="status">
+        <span className="sr-only">Loading...</span>
+      </div>
+    </div>
   ) : (
     <div className={`alert alert-${color}`} role="alert">
       <i className="fa fa-info-circle info-icon" aria-hidden="true"></i>

@@ -180,7 +180,7 @@ const Model = ({
                   className="btn btn-danger"
                   onClick={onCancel}
                 >
-                  Cancel
+                  Clear
                 </button>
                 <button
                   type="submit"
